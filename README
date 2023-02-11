@@ -1,0 +1,41 @@
+++++++++++++++++++++++++++++++++++++++++++++
+            Doozys Fetch Script
+++++++++++++++++++++++++++++++++++++++++++++
+
+Credit to @Wuff - Thank you for your help.
+
+The lazy person script:
+
+How to use:
+1. You run your searchsploit as normal, select which exploit you want to use (see example below)
+
+----------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
+ Exploit Title                                                                                                                     |  Path
+----------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
+Clam Anti-Virus ClamAV 0.88.x - UPX Compressed PE File Heap Buffer Overflow                                                        | linux/dos/28348.txt
+ClamAV / UnRAR - .RAR Handling Remote Null Pointer Dereference                                                                     | linux/remote/30291.txt
+ClamAV 0.91.2 - libclamav MEW PE Buffer Overflow                                                                                   | linux/remote/4862.py
+ClamAV < 0.102.0 - 'bytecode_vm' Code Execution                                                                                    | linux/local/47687.py
+ClamAV < 0.94.2 - JPEG Parsing Recursive Stack Overflow (PoC)                                                                      | multiple/dos/7330.c
+ClamAV Daemon 0.65 - UUEncoded Message Denial of Service                                                                           | linux/dos/23667.txt
+ClamAV Milter - Blackhole-Mode Remote Code Execution (Metasploit)                                                                  | linux/remote/16924.rb
+ClamAV Milter 0.92.2 - Blackhole-Mode (Sendmail) Code Execution (Metasploit)                                                       | multiple/remote/9913.rb
+Sendmail with clamav-milter < 0.91.2 - Remote Command Execution                                                                    | multiple/remote/4761.pl
+----------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
+
+2. from "PATH" copy only the number part: ie: linux/dos/28348.txt  --> 28384
+3. Run the script ./fetch.sh 28384
+4. Below shows the script running and shows full path to exploit, just enter directory where you want to copy over to and VOILA!
+
+Example of script running:
+
+└─$ ./fetch.sh 28348                                                                                                                                       1 ⚙
+
+++++++++++++++++++++++++++++++++++++++++++++
+            Doozys Fetch Script
+++++++++++++++++++++++++++++++++++++++++++++
+
+
+The full path to the exploit is: /usr/share/exploitdb/exploits/linux/dos/28348.txt
+
+Enter the target directory: 
